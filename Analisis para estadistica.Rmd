@@ -1,0 +1,509 @@
+```{r}
+library(fdth)
+```
+
+
+
+Datos Organizados por edadorden
+```{r}
+DatosOrden
+```
+
+
+```{r}
+DatosIniciales
+```
+
+
+Analisis por variable
+
+Gasto mensual en cultura
+
+Frecuencia absoluta
+
+```{r}
+Cultura
+```
+
+Frecuencias
+
+```{r}
+frecuenciasCulture <- fdt(DatosOrden$Culture, breaks="Sturges")
+frecuenciasCulture
+```
+
+Histograma
+
+```{r}
+HCultura = hist(DatosOrden$Culture, breaks = "Sturges", main= "Gasto mensual en cultura", ylab= "Numero de personas", xlab ="Gasto mensual (intervalos)")
+HCultura
+```
+
+histograma de frecuencias acumulada
+```{r}
+plot(frecuenciasCulture, type="cfh")   #histograma de frecuencias acumulada
+```
+
+Poligono de frecuencias
+
+```{r}
+plot(frecuenciasCulture, type="cfp") 
+```
+
+Medidas de tendencia central, posicion y variacion
+
+
+```{r}
+summary(DatosOrden$Culture)
+
+```
+
+Cuartiles
+
+```{r}
+quantile(DatosOrden$Culture)
+```
+
+Varianza
+```{r}
+var(DatosOrden$Culture)
+```
+
+Desviacion estandar
+
+```{r}
+sd(DatosOrden$Culture)
+```
+
+Coeficiente de variacion
+```{r}
+sd(DatosOrden$Culture)/mean(DatosOrden$Culture)
+```
+
+Boxplot
+
+```{r}
+boxplot(DatosOrden$Culture, horizontal = TRUE)
+```
+
+Edades de los encuestados
+
+Frecuencia absoluta
+
+```{r}
+edades
+```
+
+Frecuencias
+
+```{r}
+frecuenciasEdades <- fdt(DatosOrden$Age, breaks="Sturges")
+frecuenciasEdades
+```
+
+Histograma
+
+```{r}
+Hedad = hist(DatosOrden$Age, breaks = "Sturges", main= "Edades", ylab= "Numero de personas", xlab ="Edad (intervalos)")
+Hedad
+```
+
+histograma de frecuencias acumulada
+```{r}
+plot(frecuenciasEdades, type="cfh")   #histograma de frecuencias acumulada
+```
+
+Poligono de frecuencias
+
+```{r}
+plot(frecuenciasEdades, type="cfp") 
+```
+
+Medidas de tendencia central, posicion y variacion
+
+
+```{r}
+summary(DatosOrden$Age)
+
+```
+
+Cuartiles
+
+```{r}
+quantile(DatosOrden$Age)
+```
+
+Varianza
+```{r}
+var(DatosOrden$Age)
+```
+
+Desviacion estandar
+
+```{r}
+sd(DatosOrden$Age)
+```
+
+Coeficiente de variacion
+```{r}
+sd(DatosOrden$Age)/mean(DatosOrden$Age)
+```
+
+Boxplot
+
+```{r}
+boxplot(DatosOrden$Age, horizontal = TRUE)
+```
+
+Ingresos anuales
+
+Frecuencia absoluta
+
+```{r}
+anual
+```
+
+Frecuencias
+
+```{r}
+frecuenciasAnuales <- fdt(DatosOrden$Income, breaks="Sturges")
+frecuenciasAnuales
+```
+
+Histograma
+
+```{r}
+HAnuales = hist(DatosOrden$Income, breaks = "Sturges", main= "Ingresos Anuales", ylab= "Numero de personas", xlab ="Ingreso Anual (intervalos)")
+HAnuales
+```
+
+histograma de frecuencias acumulada
+```{r}
+plot(frecuenciasAnuales, type="cfh")   #histograma de frecuencias acumulada
+```
+
+Poligono de frecuencias
+
+```{r}
+plot(frecuenciasAnuales, type="cfp") 
+```
+
+Medidas de tendencia central, posicion y variacion
+
+
+```{r}
+summary(DatosOrden$Income)
+
+```
+
+Cuartiles
+
+```{r}
+quantile(DatosOrden$Income)
+```
+
+Varianza
+```{r}
+var(DatosOrden$Income)
+```
+
+Desviacion estandar
+
+```{r}
+sd(DatosOrden$Income)
+```
+
+Coeficiente de variacion
+```{r}
+sd(DatosOrden$Income)/mean(DatosOrden$Income)
+```
+
+Boxplot
+
+```{r}
+boxplot(DatosOrden$Income, horizontal = TRUE)
+```
+
+Gastos en el año en el teatro
+
+Frecuencia absoluta
+
+```{r}
+teatro
+```
+
+Frecuencias
+
+```{r}
+frecuenciasTeatro <- fdt(DatosOrden$Theatre, breaks="Sturges")
+frecuenciasTeatro
+```
+
+Histograma
+
+```{r}
+HTeatro = hist(DatosOrden$Theatre, breaks = "Sturges", main= "Gasto mensual en visitas al teatro", ylab= "Numero de personas", xlab ="Gasto mensual (intervalos)")
+HTeatro
+```
+
+histograma de frecuencias acumulada
+```{r}
+plot(frecuenciasTeatro, type="cfh")   #histograma de frecuencias acumulada
+```
+
+Poligono de frecuencias
+
+```{r}
+plot(frecuenciasTeatro, type="cfp") 
+```
+
+Medidas de tendencia central, posicion y variacion
+
+
+```{r}
+summary(DatosOrden$Theatre)
+
+```
+
+Cuartiles
+
+```{r}
+quantile(DatosOrden$Theatre)
+```
+
+Varianza
+```{r}
+var(DatosOrden$Theatre)
+```
+
+Desviacion estandar
+
+```{r}
+sd(DatosOrden$Theatre)
+```
+
+Coeficiente de variacion
+```{r}
+sd(DatosOrden$Theatre)/mean(DatosOrden$Theatre)
+```
+
+Boxplot
+
+```{r}
+boxplot(DatosOrden$Theatre, horizontal = TRUE)
+```
+
+Gastos en el teatro el año anterior
+
+Frecuencia absoluta
+
+```{r}
+teatroly
+```
+
+Frecuencias
+
+```{r}
+frecuenciasTeatroly <- fdt(DatosOrden$Theatre_ly, breaks="Sturges")
+frecuenciasTeatroly
+```
+
+Histograma
+
+```{r}
+HTeatroly = hist(DatosOrden$Theatre_ly, breaks = "Sturges", main= "Gasto mensual en visitas al teatro (año anterior)", ylab= "Numero de personas", xlab ="Gasto mensual (intervalos)")
+HTeatroly
+```
+
+histograma de frecuencias acumulada
+```{r}
+plot(frecuenciasTeatroly, type="cfh")   #histograma de frecuencias acumulada
+```
+
+Poligono de frecuencias
+
+```{r}
+plot(frecuenciasTeatroly, type="cfp") 
+```
+
+Medidas de tendencia central, posicion y variacion
+
+
+```{r}
+summary(DatosOrden$Theatre_ly)
+
+```
+
+Cuartiles
+
+```{r}
+quantile(DatosOrden$Theatre_ly)
+```
+
+Varianza
+```{r}
+var(DatosOrden$Theatre_ly)
+```
+
+Desviacion estandar
+
+```{r}
+sd(DatosOrden$Theatre_ly)
+```
+
+Coeficiente de variacion
+```{r}
+sd(DatosOrden$Theatre_ly)/mean(DatosOrden$Theatre_ly)
+```
+
+Boxplot
+
+```{r}
+boxplot(DatosOrden$Theatre_ly, horizontal = TRUE)
+```
+
+
+Sexo
+
+Frecuencia absoluta
+
+```{r}
+sexo
+```
+
+```{r}
+barplot(sexo/length(DatosOrden$Sex)*100, main ="Sexo", xlab="0 hombre, 1 mujer", ylab="proporcion") 
+```
+Gasto este año comparado con el anterior en porcentaje
+
+Frecuencias
+
+```{r}
+frecuenciasPorcentajes <- fdt(DatosOrden$dgasto, breaks="Sturges")
+frecuenciasPorcentajes
+```
+
+Histograma
+
+```{r}
+HPor = hist(DatosOrden$dgasto, breaks = "Sturges", main= "Porcentaje de gasto comparado con el año anterior (aproximado)", ylab= "Numero de personas", xlab ="Gasto anual en porcentaje (intervalos)")
+HPor
+```
+
+
+Porcentaje de gasto anual en cultura del ingreso anual (aproximado)
+
+Frecuencias
+
+```{r}
+frecuenciasPor <- fdt(DatosOrden$porDeGasto, breaks="Sturges")
+frecuenciasPor
+```
+
+Histograma
+
+```{r}
+HPor2 = hist(DatosOrden$porDeGasto, breaks = "Sturges", main= "Gasto anual en cultura del ingreso anual", ylab= "Numero de personas", xlab ="Gasto en porcentaje en cultura (intervalos)")
+HPor2
+```
+
+
+Medidas de tendencia central, posicion y variacion
+
+
+```{r}
+summary(DatosOrden$porDeGasto)
+
+```
+
+Cuartiles
+
+```{r}
+quantile(DatosOrden$porDeGasto)
+```
+
+Varianza
+```{r}
+var(DatosOrden$porDeGasto)
+```
+
+Desviacion estandar
+
+```{r}
+sd(DatosOrden$porDeGasto)
+```
+
+Coeficiente de variacion
+```{r}
+sd(DatosOrden$porDeGasto)/mean(DatosOrden$porDeGasto)
+```
+
+Boxplot
+
+```{r}
+boxplot(DatosOrden$porDeGasto, horizontal = TRUE)
+```
+
+Grupo Etario (Rango)
+
+Frecuencia absoluta
+
+```{r}
+table(DatosOrden$Rango)
+```
+
+Frecuencias
+
+```{r}
+table(DatosOrden$Rango)/length(DatosOrden$Rango)*100
+```
+
+Diagrama de barras
+
+```{r}
+barrasEtario = barplot(table(DatosOrden$Rango)/length(DatosOrden$Rango)*100, main= "Grupos Etarios", ylab= "Porcentaje(personas)", xlab ="Grupo pertenneciente")
+barrasEtario
+```
+Mediana de ingreso Anual por rango etario
+```{r}
+ingresosporsector
+```
+Mediana de gasto mensual en cultura por rango etario
+```{r}
+ingresosporsector
+```
+
+Mediana de gasto mensual en el teatro por rango etario
+
+```{r}
+ingresosporsector
+```
+
+
+Mediana de ingreso Anual por sexo
+```{r}
+ingresosporsector
+```
+
+Mediana de gasto mensual en cultura por sexo
+```{r}
+ingresosporsector
+```
+
+Mediana de gasto mensual en el teatro por sexo
+
+```{r}
+ingresosporsector
+```
+
+Gastos el año pasado en teatro
+```{r}
+ingresosporsector
+```
+
+
+
+
+
+
+
