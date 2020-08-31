@@ -41,13 +41,13 @@ HCultura
 
 histograma de frecuencias acumulada
 ```{r}
-plot(frecuenciasCulture, type="cfh")   #histograma de frecuencias acumulada
+plot(frecuenciasCulture, type="cfh", ylab = "Frecuencia", xlab="Gasto mensual (intervalos)")   #histograma de frecuencias acumulada
 ```
 
 Poligono de frecuencias
 
 ```{r}
-plot(frecuenciasCulture, type="cfp") 
+plot(frecuenciasCulture, type="cfp", ylab = "Frecuencia", xlab="Gasto mensual (intervalos)") 
 ```
 
 Medidas de tendencia central, posicion y variacion
@@ -110,13 +110,13 @@ Hedad
 
 histograma de frecuencias acumulada
 ```{r}
-plot(frecuenciasEdades, type="cfh")   #histograma de frecuencias acumulada
+plot(frecuenciasEdades, type="cfh", ylab = "Frecuencia", xlab="Gasto mensual (intervalos)")   #histograma de frecuencias acumulada
 ```
 
 Poligono de frecuencias
 
 ```{r}
-plot(frecuenciasEdades, type="cfp") 
+plot(frecuenciasEdades, type="cfp", ylab = "Frecuencia", xlab="Gasto mensual (intervalos)") 
 ```
 
 Medidas de tendencia central, posicion y variacion
@@ -179,13 +179,13 @@ HAnuales
 
 histograma de frecuencias acumulada
 ```{r}
-plot(frecuenciasAnuales, type="cfh")   #histograma de frecuencias acumulada
+plot(frecuenciasAnuales, type="cfh" , ylab = "Frecuencia", xlab="Gasto mensual (intervalos)")   #histograma de frecuencias acumulada
 ```
 
 Poligono de frecuencias
 
 ```{r}
-plot(frecuenciasAnuales, type="cfp") 
+plot(frecuenciasAnuales, type="cfp" , ylab = "Frecuencia", xlab="Gasto mensual (intervalos)") 
 ```
 
 Medidas de tendencia central, posicion y variacion
@@ -248,13 +248,13 @@ HTeatro
 
 histograma de frecuencias acumulada
 ```{r}
-plot(frecuenciasTeatro, type="cfh")   #histograma de frecuencias acumulada
+plot(frecuenciasTeatro, type="cfh" , ylab = "Frecuencia", xlab="Gasto mensual (intervalos)")   #histograma de frecuencias acumulada
 ```
 
 Poligono de frecuencias
 
 ```{r}
-plot(frecuenciasTeatro, type="cfp") 
+plot(frecuenciasTeatro, type="cfp", ylab = "Frecuencia", xlab="Gasto mensual (intervalos)") 
 ```
 
 Medidas de tendencia central, posicion y variacion
@@ -317,13 +317,13 @@ HTeatroly
 
 histograma de frecuencias acumulada
 ```{r}
-plot(frecuenciasTeatroly, type="cfh")   #histograma de frecuencias acumulada
+plot(frecuenciasTeatroly, type="cfh", ylab = "Frecuencia", xlab="Gasto mensual (intervalos)")   #histograma de frecuencias acumulada
 ```
 
 Poligono de frecuencias
 
 ```{r}
-plot(frecuenciasTeatroly, type="cfp") 
+plot(frecuenciasTeatroly, type="cfp", ylab = "Frecuencia", xlab="Gasto mensual (intervalos)") 
 ```
 
 Medidas de tendencia central, posicion y variacion
